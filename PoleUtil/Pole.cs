@@ -5,10 +5,10 @@ namespace PoleUtil
     public class Pole
     {
         /// <summary>
-        /// 
+        /// vymeni posledni a maximalni prvek v poli
         /// </summary>
-        /// <param name="pole"></param>
-        /// <param name="max"></param>
+        /// <param name="pole">pole prvku</param>
+        /// <param name="max">nejvetsi prvek v poli</param>
         /// <returns></returns>
         static public int[] Vymena(int[] pole, int max)
         {
@@ -31,9 +31,9 @@ namespace PoleUtil
             return pole;
         }
         /// <summary>
-        /// 
+        /// zjisti, zda jsou prvy v poli rostouci
         /// </summary>
-        /// <param name="pole"></param>
+        /// <param name="pole">pole prvku</param>
         /// <returns></returns>
         static public bool Rostouci(int[] pole)
         {
@@ -49,11 +49,11 @@ namespace PoleUtil
             return true;
         }
         /// <summary>
-        /// 
+        /// zjisti soucet sudych prvku a pocetlichych prvku v poli
         /// </summary>
-        /// <param name="pole"></param>
-        /// <param name="soucetsudych"></param>
-        /// <param name="pocetlichych"></param>
+        /// <param name="pole">pole prvku</param>
+        /// <param name="soucetsudych">soucet sudych prvku v poli</param>
+        /// <param name="pocetlichych">pocetlichych prvku v poli</param>
         static public void Sudaalichacisla(int[] pole, out int soucetsudych, out int pocetlichych)
         {
             soucetsudych = 0;
@@ -73,10 +73,9 @@ namespace PoleUtil
 
         }
         /// <summary>
-        /// 
+        /// vypise pole do stringu
         /// </summary>
-        /// <param name="dabel"></param>
-        /// <param name="pole"></param>
+        /// <param name="pole">pole prvku</param>
         static public string Vypis(int[] pole)
         {
             string text = string.Empty;
@@ -88,11 +87,11 @@ namespace PoleUtil
             return text;
         }
         /// <summary>
-        /// 
+        /// vygeneruje zadany pocet prvku v zadanem rozmezi cisel
         /// </summary>
-        /// <param name="pocetprvku"></param>
-        /// <param name="dolni"></param>
-        /// <param name="horni"></param>
+        /// <param name="pocetprvku">pocet vygenerovanych prvku</param>
+        /// <param name="dolni">dolni cislo v intervalu generovani</param>
+        /// <param name="horni">horni cislo v intervalu generovani</param>
         /// <returns></returns>
         static public int[] Generuj(int pocetprvku, int dolni = 1, int horni = 100)
         {

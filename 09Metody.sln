@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoleUtil", "PoleUtil\PoleUt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetezUtil", "RetezUtil\RetezUtil.csproj", "{C31AC1E3-6A4E-412A-B14E-59278724BE3E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatematikaUtil", "MatematikaUtil\MatematikaUtil.csproj", "{0E1A1965-4E2E-486E-82DD-5F58DD7535B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C31AC1E3-6A4E-412A-B14E-59278724BE3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C31AC1E3-6A4E-412A-B14E-59278724BE3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C31AC1E3-6A4E-412A-B14E-59278724BE3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E1A1965-4E2E-486E-82DD-5F58DD7535B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E1A1965-4E2E-486E-82DD-5F58DD7535B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E1A1965-4E2E-486E-82DD-5F58DD7535B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E1A1965-4E2E-486E-82DD-5F58DD7535B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
