@@ -44,6 +44,14 @@ namespace MatematikaUtil
             objem = a * a * a;
             return objem;
         }
+        /// <summary>
+        /// vypocita objem a uhlopricku kvadru 
+        /// </summary>
+        /// <param name="a">strana a</param>
+        /// <param name="b">strana b</param>
+        /// <param name="c">strana c</param>
+        /// <param name="u">uhlopricka</param>
+        /// <returns></returns>
         static public double Objem(double a, double b, double c, out double u)
         {
             double objem;
@@ -51,6 +59,11 @@ namespace MatematikaUtil
             objem = a * b * c;
             return objem;
         }
+        /// <summary>
+        /// algoritmus na prvocislo
+        /// </summary>
+        /// <param name="soucet">cislo, u ktereho mame zjistit, zda je prvocislo</param>
+        /// <returns></returns>
         static public bool Prvocislo(int soucet)
         {
             if (soucet == 1|| soucet > 2 && soucet % 2 == 0) return false;

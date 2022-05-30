@@ -1,15 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30413.136
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01", "P01\P01.csproj", "{E66FA664-DA18-4DBA-91CB-57D252469D9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoleUtil", "PoleUtil\PoleUtil.csproj", "{3A254A57-6248-4BDC-BB12-C89552C0BBFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PoleUtil", "PoleUtil\PoleUtil.csproj", "{3A254A57-6248-4BDC-BB12-C89552C0BBFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetezUtil", "RetezUtil\RetezUtil.csproj", "{C31AC1E3-6A4E-412A-B14E-59278724BE3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RetezUtil", "RetezUtil\RetezUtil.csproj", "{C31AC1E3-6A4E-412A-B14E-59278724BE3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatematikaUtil", "MatematikaUtil\MatematikaUtil.csproj", "{0E1A1965-4E2E-486E-82DD-5F58DD7535B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MatematikaUtil", "MatematikaUtil\MatematikaUtil.csproj", "{0E1A1965-4E2E-486E-82DD-5F58DD7535B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02", "P02\P02.csproj", "{BB653232-365E-4956-9FCC-AA10A59BBAB1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{0E1A1965-4E2E-486E-82DD-5F58DD7535B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E1A1965-4E2E-486E-82DD-5F58DD7535B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E1A1965-4E2E-486E-82DD-5F58DD7535B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB653232-365E-4956-9FCC-AA10A59BBAB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB653232-365E-4956-9FCC-AA10A59BBAB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB653232-365E-4956-9FCC-AA10A59BBAB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB653232-365E-4956-9FCC-AA10A59BBAB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

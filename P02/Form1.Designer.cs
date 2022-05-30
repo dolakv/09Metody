@@ -1,4 +1,4 @@
-﻿namespace P01
+﻿namespace P02
 {
     partial class Form1
     {
@@ -33,7 +33,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(113, 93);
+            this.button1.Location = new System.Drawing.Point(457, 89);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
