@@ -9,12 +9,12 @@ namespace RetezUtil
         /// </summary>
         /// <param name="text">zadany retezec</param>
         /// <returns></returns>
-        static private bool JeAlfanum(string text)
+        static private bool JeAlfanum(string text, out int pocetmalych, out int pocetcifer, out int pocetostatnich)
         {
             bool x = true;
-            int pocetmalych = 0;
-            int pocetcifer = 0;
-            int pocetostatnich = 0;
+            pocetmalych = 0;
+            pocetcifer = 0;
+            pocetostatnich = 0;
             foreach(char znak in text)
             {
                 if(znak >= 'a' && znak <= 'z')
@@ -35,6 +35,8 @@ namespace RetezUtil
             }
             return x;
         }
+
+
         /// <summary>
         /// smaze vsechny cifry z retezce
         /// </summary>
