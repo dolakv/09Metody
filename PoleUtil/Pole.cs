@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MatematikaUtil;
+using System;
 
 namespace PoleUtil
 {
@@ -13,7 +14,6 @@ namespace PoleUtil
         static public int[] Vymena(int[] pole, int max)
         {
             int maxpozice = 0;
-            int posledni = 0;
             int kybl;
 
             for (int i = 0; i < pole.Length; i++)
@@ -100,6 +100,27 @@ namespace PoleUtil
             for (int i = 0; i < pocetprvku; i++)
             {
                 pole[i] = rnd.Next(dolni, horni + 1);
+            }
+            return pole;
+        }
+        /// <summary>
+        /// vsechny zaporne prvky vynuluje a vsechny kladne nahradi mocninou ^x
+        /// </summary>
+        /// <param name="pole">pole prvku</param>
+        /// <param name="x">exponent</param>
+        /// <returns></returns>
+        static public int[] Vypocet(int[] pole, int x)
+        {
+            for (int i = 0; i < pole.Length; i++)
+            {
+                if (pole[i] < 0)
+                {
+                    pole[i] = 0;
+                }
+                else
+                {
+                    pole[i] = Matematika.Mocnina(pole[i], x);
+                }
             }
             return pole;
         }

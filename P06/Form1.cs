@@ -1,5 +1,4 @@
-﻿using MatematikaUtil;
-using RetezUtil;
+﻿using RetezUtil;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace P05
+namespace P06
 {
     public partial class Form1 : Form
     {
@@ -27,20 +26,17 @@ namespace P05
         private void button1_Click(object sender, EventArgs e)
         {
             string text = textBox1.Text;
-            int pocet = 0;
-            int soucet = 0;
-            Retez.ObsahujeCifru(text, out pocet, out soucet);
-            if (Matematika.Prvocislo(soucet))
+            if(Retez.ObsahujeSlovo(out string nejdelsi, out string nejkratsi, text))
             {
-                MessageBox.Show("soucet neni prvocislo");
-
+                MessageBox.Show("retezec obsahuje aspon 1 slovo");
             }
             else
             {
-                MessageBox.Show("soucet je prvocislo");
+                MessageBox.Show("retezec neobsahuje ani jedno slovo");
             }
-            MessageBox.Show("soucet je " + soucet);
-            MessageBox.Show("pocet je " + pocet);
+            MessageBox.Show("nejdelsi slovo je " + nejdelsi);
+            MessageBox.Show("nejkratsi slovo je " + nejkratsi);
+            Retez.Zobraz(text, listBox1);
 
         }
     }

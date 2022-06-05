@@ -73,5 +73,20 @@ namespace MatematikaUtil
             }
             return true;
         }
+        /// <summary>
+        /// vypocita mocninu prvku v poli podle exponentu x 
+        /// </summary>
+        /// <param name="prvekvpoli">prvek v poli</param>
+        /// <param name="x">exponent</param>
+        /// <returns></returns>
+        static public int Mocnina(int prvekvpoli, int x)
+        {
+            int vysledek = 1;
+            for (int i = 0; i < x; i++)
+            {
+                vysledek *= prvekvpoli;
+            }
+            return prvekvpoli;
+        }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows.Forms;
 
 namespace RetezUtil
 {
@@ -84,6 +85,55 @@ namespace RetezUtil
                 }
             }
             return obsahujecifru;
+        }
+        /// <summary>
+        /// zjisti, jake je nejdelsi, nejkratsi slovo a pokud vubec retez slovo obsahuje
+        /// </summary>
+        /// <param name="nejdelsi">nejdelsi slovo</param>
+        /// <param name="nejkratsi">nejkratsi</param>
+        /// <param name="text">zadany retezec</param>
+        /// <returns></returns>
+        static public bool ObsahujeSlovo(out string nejdelsi, out string nejkratsi, string text)
+        {
+            bool obsahuje = false;
+            nejdelsi = string.Empty;
+            text = text.Trim();
+            while (text.Contains("  "))
+            {
+                text = text.Replace("  ", " ");
+            }
+            string[] novytext = text.Split(' ');
+            nejkratsi = novytext[0];
+            for (int i = 0; i < novytext.Length; i++)
+            {
+                if (novytext[i] != string.Empty)
+                {
+                    obsahuje = true;
+                    if (novytext[i].Length > nejdelsi.Length)
+                    {
+                        nejdelsi = novytext[i];
+                    }
+                    else if (novytext[i].Length < nejkratsi.Length)
+                    { 
+                        nejkratsi = novytext[i]; 
+                    }
+
+                }
+            }
+            return obsahuje;
+        }
+        /// <summary>
+        /// zobrazi slova do listboxu 
+        /// </summary>
+        /// <param name="text">zadany text</param>
+        /// <param name="listbox">definovany listbox</param>
+        static public void Zobraz(string text, ListBox listbox)
+        {
+            string[] novytext = text.Split(' ');
+            foreach (string slovo in novytext)
+            {
+                listbox.Items.Add(slovo);
+            }
         }
     }
 }

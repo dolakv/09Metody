@@ -1,5 +1,4 @@
-﻿using MatematikaUtil;
-using RetezUtil;
+﻿using PoleUtil;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace P05
+namespace P04
 {
     public partial class Form1 : Form
     {
@@ -26,21 +25,18 @@ namespace P05
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string text = textBox1.Text;
-            int pocet = 0;
-            int soucet = 0;
-            Retez.ObsahujeCifru(text, out pocet, out soucet);
-            if (Matematika.Prvocislo(soucet))
+            int n = Convert.ToInt32(textBox1.Text);
+            int x = Convert.ToInt32(textBox2.Text);
+            int[] pole = Pole.Generuj(n, -100, 100);
+            pole = Pole.Vypocet(pole, x);
+            foreach (int cislo in pole)
             {
-                MessageBox.Show("soucet neni prvocislo");
+                listBox2.Items.Add(cislo);
+            }
+        }
 
-            }
-            else
-            {
-                MessageBox.Show("soucet je prvocislo");
-            }
-            MessageBox.Show("soucet je " + soucet);
-            MessageBox.Show("pocet je " + pocet);
+        private void button1_Click_1(object sender, EventArgs e)
+        {
 
         }
     }
